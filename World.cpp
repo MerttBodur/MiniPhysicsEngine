@@ -12,6 +12,7 @@
 
     void World::Update() {
         for (auto& i : balls_in_scenes) {
+            i.pos_y += g;
             i.Update();
             if (i.pos_x - i.rad < 0) //Check for if ball hit the left wall
             {

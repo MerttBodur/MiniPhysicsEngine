@@ -6,6 +6,7 @@ class World {
 public:
     int width, height;
     std::vector<Ball> balls_in_scenes;
+    const float g = -9.8; //gravity
 
     World(int w, int h);
      
